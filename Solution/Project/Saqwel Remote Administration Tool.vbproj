@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B0C1423-1F39-485E-A66D-20E0CA90B9E5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SaqwelRemoteAdministrationTool.My.MyApplication</StartupObject>
+    <RootNamespace>SaqwelRemoteAdministrationTool</RootNamespace>
+    <AssemblyName>srat</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>eye.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>srat.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>srat.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cassia, Version=2.0.0.60, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Cassia.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aboutForm.Designer.vb">
+      <DependentUpon>aboutForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="aboutForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eventsPropertiesForm.Designer.vb">
+      <DependentUpon>eventsPropertiesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="eventsPropertiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vncServerSettingsForm.Designer.vb">
+      <DependentUpon>vncServerSettingsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vncServerSettingsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="serviceStateChangeForm.Designer.vb">
+      <DependentUpon>serviceStateChangeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="serviceStateChangeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vncPasswordForm.Designer.vb">
+      <DependentUpon>vncPasswordForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vncPasswordForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generalDescriptionForm.Designer.vb">
+      <DependentUpon>generalDescriptionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="generalDescriptionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="partitionPropertiesForm.Designer.vb">
+      <DependentUpon>partitionPropertiesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="partitionPropertiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="groupAddMemberForm.Designer.vb">
+      <DependentUpon>groupAddMemberForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="groupAddMemberForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="groupCreateForm.Designer.vb">
+      <DependentUpon>groupCreateForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="groupCreateForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="groupPropertiesForm.Designer.vb">
+      <DependentUpon>groupPropertiesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="groupPropertiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shareAddUserForm.Designer.vb">
+      <DependentUpon>shareAddUserForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="shareAddUserForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shareCreateForm.Designer.vb">
+      <DependentUpon>shareCreateForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="shareCreateForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sharePropertiesForm.Designer.vb">
+      <DependentUpon>sharePropertiesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sharePropertiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userGroupAddForm.Designer.vb">
+      <DependentUpon>userGroupAddForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="userGroupAddForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userPasswordForm.Designer.vb">
+      <DependentUpon>userPasswordForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="userPasswordForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userPropertiesForm.Designer.vb">
+      <DependentUpon>userPropertiesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="userPropertiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servicePropertiesForm.Designer.vb">
+      <DependentUpon>servicePropertiesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="servicePropertiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userCreateForm.Designer.vb">
+      <DependentUpon>userCreateForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="userCreateForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="aboutForm.resx">
+      <DependentUpon>aboutForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eventsPropertiesForm.resx">
+      <DependentUpon>eventsPropertiesForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generalDescriptionForm.resx">
+      <DependentUpon>generalDescriptionForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="groupAddMemberForm.resx">
+      <DependentUpon>groupAddMemberForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="groupCreateForm.resx">
+      <DependentUpon>groupCreateForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="groupPropertiesForm.resx">
+      <DependentUpon>groupPropertiesForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="partitionPropertiesForm.resx">
+      <DependentUpon>partitionPropertiesForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="serviceStateChangeForm.resx">
+      <DependentUpon>serviceStateChangeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shareAddUserForm.resx">
+      <DependentUpon>shareAddUserForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shareCreateForm.resx">
+      <DependentUpon>shareCreateForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sharePropertiesForm.resx">
+      <DependentUpon>sharePropertiesForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userGroupAddForm.resx">
+      <DependentUpon>userGroupAddForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicePropertiesForm.resx">
+      <DependentUpon>servicePropertiesForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userCreateForm.resx">
+      <DependentUpon>userCreateForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userPasswordForm.resx">
+      <DependentUpon>userPasswordForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userPropertiesForm.resx">
+      <DependentUpon>userPropertiesForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vncPasswordForm.resx">
+      <DependentUpon>vncPasswordForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vncServerSettingsForm.resx">
+      <DependentUpon>vncServerSettingsForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="eye.ico" />
+    <Content Include="si.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Установщик Windows 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
