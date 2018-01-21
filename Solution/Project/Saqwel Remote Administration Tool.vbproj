@@ -61,7 +61,7 @@
   <ItemGroup>
     <Reference Include="Cassia, Version=2.0.0.60, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Cassia.dll</HintPath>
+      <HintPath>..\..\..\Solution\Addons\Cassia.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -323,7 +323,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="eye.ico" />
-    <Content Include="si.exe" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">

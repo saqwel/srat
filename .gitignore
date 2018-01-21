@@ -2,4 +2,6 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/Solution/.vs/Saqwel Remote Administration Tool/v15/Server/sqlite3
+/Solution/.vs
+/Solution/Project/obj
+/Solution/Project/bin
