@@ -3393,7 +3393,12 @@ Public Class Form1
     End Sub
 
     Private Sub InventoryToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mainMenuServiceInventarization.Click
-        Process.Start(PATH & "\si.exe", "")
+        'Process.Start(PATH & "\si.exe", "")
+        ShowInventoryWindow()
+    End Sub
+
+    Private Sub ShowInventoryWindow()
+        inventoryForm.Show()
     End Sub
 
     Private Sub mainMenuComputerReboot_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles mainMenuComputerReboot.Click
